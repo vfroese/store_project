@@ -1,0 +1,56 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/**
+{
+    background: black;
+}*/
+
+#container
+{
+    width: 700px;
+    background: white;
+    margin: 0 auto;
+    border: solid;
+    border-color: red;
+    border-width: 10px;
+}
+
+#nav
+{
+    height: 50px;
+    background: black;
+    margin-top: -20px;
+}
+
+table
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+td
+{
+    width:200px;
+    padding: 10px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    float: left;
+    padding: 5px;
+    margin-top: 10px;
+    color: red;
+}
+
+a
+{
+    color: red; 
+}

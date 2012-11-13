@@ -1,0 +1,29 @@
+
+<table>
+  <tr>
+  <% counter = 1 %>
+  <% @products.each do |product| %>
+  <td>
+    <%if product.image.present?%>
+    <p><%= image_tag product.image %></p>
+    <%else%>
+      <p><img src="/assets/image_not_found.jpg" alt="Keep Calm Inc."/></p>
+    <%end%>
+    <!--<p><%= product.product_name %></p>-->
+    <p><%= product.description %></p>
+    <p>$<%= product.price %></p>
+    <p>Quantity: <%= product.quantity %></p>
+    <p>Category: <%= product.category %></p>
+    <p><%= link_to 'Edit', edit_admin_product_path(product) %> <%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></p>
+  </td>
+  <%counter += 1%>
+  <% if(counter == 4)%>
+    <%counter = 1%>
+    </tr>
+    <tr>
+  <%end%>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'New Product', new_admin_product_path %>

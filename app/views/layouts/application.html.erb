@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Store</title>
+  <title>Keep Calm Inc.</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="container">
+    <div id="header">
+      <img src="/assets/header.png" alt="Keep Calm Inc."/>
+    </div>
+    <div id="nav">
+      <ul>
+        <li><%= link_to 'All Products', products_path %></li>
+        <li>Posters</li>
+        <li>Mugs</li>
+        <li>Other</li>
+        <li><%= link_to 'Admin', admin_products_path %></li>
+      </ul>
+    </div>
+    <div id="content">
+    <%= yield %>
+    </div>
+  </div>
 </body>
 </html>

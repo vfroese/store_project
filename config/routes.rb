@@ -1,4 +1,11 @@
 Store::Application.routes.draw do
+  
+  namespace :admin do
+    resources :products
+  end
+  
+  resources :products
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
