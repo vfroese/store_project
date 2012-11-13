@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="top">
+    <h5><%= link_to 'Admin', admin_products_path %></h5>
+    <h3>Cart: (item count) as link</h3>
+  </div>
   <div id="container">
     <div id="header">
       <img src="/assets/header.png" alt="Keep Calm Inc."/>
@@ -14,10 +18,11 @@
     <div id="nav">
       <ul>
         <li><%= link_to 'All Products', products_path %></li>
-        <li>Posters</li>
-        <li>Mugs</li>
-        <li>Other</li>
-        <li><%= link_to 'Admin', admin_products_path %></li>
+        <li><%= link_to 'Posters', products_path %></li>
+        <!--<li><link_to 'Posters', products_path.where(:category => 'poster') %></li>-->
+        <!--<li>< link_to 'Posters', products_path(products.category == 'poster') %></li>-->
+        <li><%= link_to 'Mugs', products_path %></li>
+        <li><%= link_to 'T-Shirts', products_path %></li>
       </ul>
     </div>
     <div id="content">

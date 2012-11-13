@@ -1,3 +1,4 @@
+<h1><%= link_to 'New Product', new_admin_product_path %></h1>
 
 <table>
   <tr>
@@ -10,7 +11,7 @@
       <p><img src="/assets/image_not_found.jpg" alt="Keep Calm Inc."/></p>
     <%end%>
     <!--<p><%= product.product_name %></p>-->
-    <p><%= product.description %></p>
+    <p><%= link_to product.description, product_path(product) %></p>
     <p>$<%= product.price %></p>
     <p>Quantity: <%= product.quantity %></p>
     <p>Category: <%= product.category %></p>
@@ -26,4 +27,4 @@
 </table>
 <br />
 
-<%= link_to 'New Product', new_admin_product_path %>
+

@@ -3,10 +3,29 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/**
+html
 {
-    background: black;
-}*/
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#top
+{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    float:left;
+    position: fixed;
+    margin-top:-10px;
+}
+
+#top h3
+{
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+}
 
 #container
 {
@@ -14,7 +33,7 @@
     background: white;
     margin: 0 auto;
     border: solid;
-    border-color: red;
+    border-color: #E6DCDC;
     border-width: 10px;
 }
 
@@ -47,10 +66,24 @@ li
     float: left;
     padding: 5px;
     margin-top: 10px;
-    color: red;
+    color: #E6DCDC;
 }
 
 a
 {
-    color: red; 
+    color: #E6DCDC; 
 }
+
+h1
+{
+    color: #E6DCDC;
+    padding: 20px;
+}
+
+#show 
+{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+

@@ -2,7 +2,7 @@ class Admin::ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   
-  before_filter :require_sudo, :except => [:index, :show] #password, application_controller
+  before_filter :require_sudo#password, application_controller
   
   
   def index
