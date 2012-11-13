@@ -1,5 +1,13 @@
 Store::Application.routes.draw do
   
+  resources :lineitems
+
+  resources :orders
+
+  resources :customers
+
+  resources :provinces
+
   namespace :admin do
     resources :products
   end
