@@ -1,13 +1,13 @@
 class FinderController < ApplicationController
   def poster
-    @products = Product.where(:category => "poster").all
+    @products = Product.where(:category => "Poster").all
   end
 
   def mug
-    @products = Product.where(:category => "mug").all
+    @products = Product.where(:category => "Mug").all
   end
 
   def tshirt
-    @products = Product.where(:category => "tshirt").all
+    @products = Product.where(:category => "Tshirt").all
   end
 end
