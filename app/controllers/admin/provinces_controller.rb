@@ -1,9 +1,6 @@
-class ProvincesController < ApplicationController
+class Admin::ProvincesController < ApplicationController
   # GET /provinces
   # GET /provinces.json
-  
-  before_filter :require_sudo
-  
   def index
     @provinces = Province.all
 

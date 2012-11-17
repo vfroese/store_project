@@ -11,3 +11,96 @@
  *= require_self
  *= require_tree .
 */
+
+
+html
+{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#top
+{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    float:left;
+    position: fixed;
+    margin-top:-10px;
+}
+
+#top h3
+{
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+#content h3
+{
+    margin-left: 20px;
+}
+
+#container
+{
+    width: 700px;
+    background: white;
+    margin: 0 auto;
+    border: solid;
+    border-color: #E6DCDC;
+    border-width: 10px;
+}
+
+#nav
+{
+    height: 50px;
+    background: black;
+    margin-top: -20px;
+}
+
+table
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+td
+{
+    width:200px;
+    padding: 10px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    float: left;
+    padding: 5px;
+    margin-top: 10px;
+    color: #E6DCDC;
+}
+
+a:link 
+{
+    color: #E6DCDC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1
+{
+    color: #E6DCDC;
+    padding: 20px;
+}
+
+#show 
+{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+

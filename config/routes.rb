@@ -1,5 +1,11 @@
 Store::Application.routes.draw do
   
+  get "finder/poster"
+
+  get "finder/mug"
+
+  get "finder/tshirt"
+
   resources :lineitems
 
   resources :orders
@@ -9,10 +15,14 @@ Store::Application.routes.draw do
   resources :provinces
 
   namespace :admin do
-    resources :products
+    resources :products, :provinces
   end
   
   resources :products
+  match 'finder/poster'=> 'finder#poster', :as => 'poster', :via => :get
+  match 'finder/mug'=> 'finder#mug', :as => 'mug', :via => :get
+  match 'finder/tshirt'=> 'finder#tshirt', :as => 'tshirt', :via => :get
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
