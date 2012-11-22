@@ -22,6 +22,7 @@ Store::Application.routes.draw do
   match 'finder/poster'=> 'finder#poster', :as => 'poster', :via => :get
   match 'finder/mug'=> 'finder#mug', :as => 'mug', :via => :get
   match 'finder/tshirt'=> 'finder#tshirt', :as => 'tshirt', :via => :get
+  match "results" => "finder#search_results", :as => 'results', :via => :post
   
 
   # The priority is based upon order of creation:

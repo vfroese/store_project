@@ -1,0 +1,55 @@
+      finder_poster GET    /finder/poster(.:format)            finder#poster
+         finder_mug GET    /finder/mug(.:format)               finder#mug
+      finder_tshirt GET    /finder/tshirt(.:format)            finder#tshirt
+          lineitems GET    /lineitems(.:format)                lineitems#index
+                    POST   /lineitems(.:format)                lineitems#create
+       new_lineitem GET    /lineitems/new(.:format)            lineitems#new
+      edit_lineitem GET    /lineitems/:id/edit(.:format)       lineitems#edit
+           lineitem GET    /lineitems/:id(.:format)            lineitems#show
+                    PUT    /lineitems/:id(.:format)            lineitems#update
+                    DELETE /lineitems/:id(.:format)            lineitems#destroy
+             orders GET    /orders(.:format)                   orders#index
+                    POST   /orders(.:format)                   orders#create
+          new_order GET    /orders/new(.:format)               orders#new
+         edit_order GET    /orders/:id/edit(.:format)          orders#edit
+              order GET    /orders/:id(.:format)               orders#show
+                    PUT    /orders/:id(.:format)               orders#update
+                    DELETE /orders/:id(.:format)               orders#destroy
+          customers GET    /customers(.:format)                customers#index
+                    POST   /customers(.:format)                customers#create
+       new_customer GET    /customers/new(.:format)            customers#new
+      edit_customer GET    /customers/:id/edit(.:format)       customers#edit
+           customer GET    /customers/:id(.:format)            customers#show
+                    PUT    /customers/:id(.:format)            customers#update
+                    DELETE /customers/:id(.:format)            customers#destroy
+          provinces GET    /provinces(.:format)                provinces#index
+                    POST   /provinces(.:format)                provinces#create
+       new_province GET    /provinces/new(.:format)            provinces#new
+      edit_province GET    /provinces/:id/edit(.:format)       provinces#edit
+           province GET    /provinces/:id(.:format)            provinces#show
+                    PUT    /provinces/:id(.:format)            provinces#update
+                    DELETE /provinces/:id(.:format)            provinces#destroy
+     admin_products GET    /admin/products(.:format)           admin/products#index
+                    POST   /admin/products(.:format)           admin/products#create
+  new_admin_product GET    /admin/products/new(.:format)       admin/products#new
+ edit_admin_product GET    /admin/products/:id/edit(.:format)  admin/products#edit
+      admin_product GET    /admin/products/:id(.:format)       admin/products#show
+                    PUT    /admin/products/:id(.:format)       admin/products#update
+                    DELETE /admin/products/:id(.:format)       admin/products#destroy
+    admin_provinces GET    /admin/provinces(.:format)          admin/provinces#index
+                    POST   /admin/provinces(.:format)          admin/provinces#create
+ new_admin_province GET    /admin/provinces/new(.:format)      admin/provinces#new
+edit_admin_province GET    /admin/provinces/:id/edit(.:format) admin/provinces#edit
+     admin_province GET    /admin/provinces/:id(.:format)      admin/provinces#show
+                    PUT    /admin/provinces/:id(.:format)      admin/provinces#update
+                    DELETE /admin/provinces/:id(.:format)      admin/provinces#destroy
+           products GET    /products(.:format)                 products#index
+                    POST   /products(.:format)                 products#create
+        new_product GET    /products/new(.:format)             products#new
+       edit_product GET    /products/:id/edit(.:format)        products#edit
+            product GET    /products/:id(.:format)             products#show
+                    PUT    /products/:id(.:format)             products#update
+                    DELETE /products/:id(.:format)             products#destroy
+             poster GET    /finder/poster(.:format)            finder#poster
+                mug GET    /finder/mug(.:format)               finder#mug
+             tshirt GET    /finder/tshirt(.:format)            finder#tshirt

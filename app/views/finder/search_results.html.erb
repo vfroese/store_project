@@ -1,0 +1,29 @@
+<h1>Search Results for "<%= @keyword%>"</h1>
+
+<table>
+  <tr>
+  <% counter = 1 %>
+  <% if @products.count > 0 then %>
+    <% @products.each do |product| %>
+      <td>
+        <%if product.image.present?%>
+          <p><%= image_tag product.image %></p>
+        <%else%>
+          <p><img src="/assets/image_not_found.jpg" alt="Keep Calm Inc."/></p>
+        <%end%>
+        <p><%= link_to product.description, product_path(product) %></p>
+        <p>$<%= product.price %></p>
+        <h4>Add to Cart</h4>
+      </td>
+      <%counter += 1%>
+      <% if(counter == 4)%>
+        <%counter = 1%>
+        </tr>
+        <tr>
+      <%end%>
+    <%end%>
+  <%else%>
+    <h1>There are currently no products in this category</h1>
+  <%end%>
+</table>
+<br />

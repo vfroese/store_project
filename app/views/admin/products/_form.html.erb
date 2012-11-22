@@ -30,7 +30,8 @@
   <div class="field">
     <%= f.label :category %><br />
     <%= f.text_field :category %>
-    <!--<%= f.select :category, Product::ALLOWED_CATEGORY%> put that constant in the controller-->
+    
+    <!--< f.collection_select :category, @categories, :id, :name %>< f.select :category, Product::ALLOWED_CATEGORY%> put that constant in the controller-->
   </div>
   <div class="field">
     <%= f.label :image %><br />

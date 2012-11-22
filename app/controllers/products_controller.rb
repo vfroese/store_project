@@ -16,7 +16,8 @@ class ProductsController < ApplicationController
   
   def admin
     @products = Product.all
-
+    @categories = Category.order(:name)
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -38,7 +39,7 @@ class ProductsController < ApplicationController
   # GET /products/new.json
   def new
     @product = Product.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @product }
