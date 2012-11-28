@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
+  #require "rubygems"
+  #require "bundler/setup"
+
+  # require your gems as usual
+  #require "nokogiri"
+  
   protected
   
   def require_sudo
