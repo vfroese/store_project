@@ -7,10 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="top">
-    <h5><%= link_to 'Admin', admin_products_path %></h5>
-    <h3>Cart: (item count) as link</h3>
-  </div>
+  <article>
+    <header>
+      <div id="top">
+        <h5><%= link_to 'Admin', admin_products_path %></h5>
+        <h3>Cart: (item count) as link</h3>
+      </div>
+    </header>
+  </article>
   <div id="container">
     <div id="header">
       <img src="/assets/header.png" alt="Keep Calm Inc."/>
@@ -32,6 +36,9 @@
     <div id="content">
     <%= yield %>
     </div>
+    <footer>
+      <p><strong>Copyright </strong>2012 Tori Froese</p>
+    </footer>
   </div>
 </body>
 </html>

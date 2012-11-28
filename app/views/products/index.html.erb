@@ -5,7 +5,6 @@
   <% @products.each do |product| %>
   <td>
     <%if product.image.present?%>
-      <!--< link_to '<%=image_tag product.image%>', product_path(product) %>-->
     <p><%= image_tag product.image %></p>
     <%else%>
       <p><img src="/assets/image_not_found.jpg" alt="Keep Calm Inc."/></p>
